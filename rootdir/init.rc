@@ -522,6 +522,7 @@ service servicemanager /system/bin/servicemanager
 #    onrestart restart drm
 
 service minimedia /usr/libexec/droid-hybris/system/bin/minimediaservice
+    setenv LD_PRELOAD /usr/libexec/droid-hybris/system/lib/libcameraservice.so
     class main
     user media
     group audio camera
